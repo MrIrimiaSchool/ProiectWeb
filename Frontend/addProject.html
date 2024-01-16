@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaugă Proiect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="projects-container">
+        <div id="projectsList">
+        </div>
+        <div class="bugs-container" id="bugsList">
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Adaugă Proiect Nou</h2>
+            <form id="projectForm">
+                <label for="projectName">Numele Proiectului</label>
+                <input type="text" id="projectName" placeholder="Numele Proiectului" required>
+                <label for="projectRepo">Repository</label>
+                <input type="text" id="projectRepo" placeholder="Repository" required>
+                <label for="projectTeam">Echipa</label>
+                <input type="text" id="projectTeam" placeholder="Echipa" required>
+                <label for="ownerId">Owner Id</label>
+                <input type="text" id="ownerId" placeholder="Owner Id" required>
+                <button type="submit">Adaugă Proiect</button>
+            </form>
+            
+        </div>
+        <div class="bug-form-container">
+            <h2>Adaugă un Bug Nou</h2>
+            <form id="bugForm">
+                <label for="bugSeverity">Severitate:</label>
+                <select id="bugSeverity" required>
+                    <option value="">Selectează Severitatea</option>
+                    <option value="low">Scăzută</option>
+                    <option value="medium">Medie</option>
+                    <option value="high">Ridicată</option>
+                </select>
+
+                <label for="bugPriority">Prioritate:</label>
+                <select id="bugPriority" required>
+                    <option value="">Selectează Prioritatea</option>
+                    <option value="low">Scăzută</option>
+                    <option value="medium">Medie</option>
+                    <option value="high">Ridicată</option>
+                </select>
+
+                <label for="bugDescription">Descriere:</label>
+                <textarea id="bugDescription" placeholder="Descrie bug-ul" required></textarea>
+
+                <label for="bugCommitLink">Link Commit:</label>
+                <input type="url" id="bugCommitLink" placeholder="http://..." required>
+
+                <button type="submit">Adaugă Bug</button>
+            </form>
+        </div>
+        <div class="bugs-container" id="bugsList">
+        </div>
+        <div class="logout-container">
+            <button id="refreshProjectsButton" style="background-color: green; color: white; margin-right: 10px;">Refresh Projects</button>
+            <button id="logoutButton">Logout</button>
+            <button id="showAllButton" style="background-color: rgb(45, 0, 128); color: white; margin-right: 10px;">Afișează Tot</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

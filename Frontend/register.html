@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Înregistrare</h2>
+        <form id="registerForm">
+            <label for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" placeholder="Introdu email-ul" required>
+            <label for="registerPassword">Parolă</label>
+            <input type="password" id="registerPassword" placeholder="Introdu parola" required>
+            <label for="role">Rol</label>
+            <select id="role" required>
+                <option value="MP">MP</option>
+                <option value="TST">TST</option>
+            </select>
+            <button type="submit">Înregistrează-te</button>
+        </form>
+        <button type="button" class="link-button" onclick="window.location.href='login.html'">Autentifică-te</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
